@@ -1,4 +1,4 @@
-# PanSN-spec: Pangenome Sequence Naming Specification
+# PanSN-spec: Pangenome Sequence Naming
 
 *Harmonizing biosample information in FASTA, GFA, VCF, BED and GFF/GTF formats.*
 
