@@ -43,7 +43,8 @@ This scheme is flexible and precise, but it involves a hidden hierarchy of relat
 
 A typical practice when working with pangenomes is to split the pangenome into separate files, with the name of each providing the identity of the specific genome copy represented therein.
 This matches per-sample or per-haplotype assemblies generated for each single sample.
-But, if we then make alignments, genome graphs, or other assemblies out of these genomes, we will lose sample contig-metadata.
+But, if we then make alignments, genome graphs, or other assemblies out of these genomes, we will lose sample contig-metadata in the output.
+We will then have to look up which sample a given contig occurs in, leading to additional indirection and potential confusion.
 
 ## benefits of the name hack
 
