@@ -39,6 +39,7 @@ The most critical such identification links each sequence to an individual genom
 
 In standards like the Sequence Alignment/Map format (SAM) this information is added to each alignment record, and depends on metadata carried in the header of the file.
 Each read is part of a read group, and each read group is part of a biosample.
+This scheme is flexible and precise, but it involves a hidden hierarchy of relationships that can be hard for users to parse, and it necessitates a header to contain the auxiliary information.
 
 A typical practice when working with pangenomes is to split the pangenome into separate files, with the name of each providing the identity of the specific genome copy represented therein.
 This matches per-sample or per-haplotype assemblies generated for each single sample.
