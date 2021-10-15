@@ -25,7 +25,7 @@ haplotype_id := number
 contig_or_scaffold_name := string
 ```
 
-For instance, `HG002#1#ctg3320` names `ctg3320` on the first haplotype (or phase group) of `HG002`, while `HG002#2#ctg9876` is contig `ctg9876` on the other.
+For instance, `HG002#1#ctg1234` names `ctg1234` on the first haplotype (or phase group) of `HG002`, while `HG002#2#ctg9876` is contig `ctg9876` on the other.
 
 We suggest using `#` as a delimiter, but any character not used in your contig or sample identifiers will work.
 Tools supporting PanSN should allow the user to change the delimiter.
