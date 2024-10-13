@@ -21,7 +21,7 @@ where
 ```
 sample_name := string
 delim := character
-haplotype_id := number
+haplotype_id := string
 contig_or_scaffold_name := string
 ```
 
