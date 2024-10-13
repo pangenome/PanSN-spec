@@ -32,6 +32,19 @@ Tools supporting PanSN should allow the user to change the delimiter.
 
 The prefixing should provide a unique hierachy of sample names and haplotype identifiers for the entire pangenome under analysis.
 
+### haplotype_id
+
+The use of strings for `haplotype_id` allows for clear representation of various assembly types and scenarios. Here are detailed examples based on common labeling practices from Vertebrate Genome Project (VGP) and Earth BioGenome Project (EBP):
+
+- **Primary/Alternate assemblies**. Used when one assembly is much more complete than the other haplotype (example: `hifiasm` without Hi-C or trio phasing): `HG002#1#ctg1234` and `HG002#2#ctg5678`
+
+- **Haplotype 1/Haplotype 2**. Used when both haplotype assemblies are comparably complete, but parental origin is unknown (example: `hifiasm` or `verkko` with Hi-C phasing): `HG002#hap1#ctg1234` and `HG002#hap2#ctg5678`
+
+- **Maternal/Paternal**. Used when both haplotypes are comparably complete, and their parental origins for all chromosomes are known (example: `hifiasm` or `verkko` with trio phasing): `HG002#1#ctg1234` and `HG002#2#ctg5678`
+New: HG002#mat#ctg1234 and HG002#pat#ctg5678
+
+- **Merged assemblies**. Used when both haplotypes are combined to create one merged assembly (example: many past assemblers): `HG002#mer#ctg1234`
+
 ## deeper motivation
 
 When working with pangenomes it becomes necessary to maintain simple metadata about the origins of each sequence.
