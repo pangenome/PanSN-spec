@@ -40,8 +40,7 @@ The use of strings for `haplotype_id` allows for clear representation of various
 
 - **Haplotype 1/Haplotype 2**. Used when both haplotype assemblies are comparably complete, but parental origin is unknown (example: `hifiasm` or `verkko` with Hi-C phasing): `HG002#hap1#ctg1234` and `HG002#hap2#ctg5678`
 
-- **Maternal/Paternal**. Used when both haplotypes are comparably complete, and their parental origins for all chromosomes are known (example: `hifiasm` or `verkko` with trio phasing): `HG002#1#ctg1234` and `HG002#2#ctg5678`
-New: HG002#mat#ctg1234 and HG002#pat#ctg5678
+- **Maternal/Paternal**. Used when both haplotypes are comparably complete, and their parental origins for all chromosomes are known (example: `hifiasm` or `verkko` with trio phasing): `HG002#mat#ctg1234` and `HG002#pat#ctg5678`
 
 - **Merged assemblies**. Used when both haplotypes are combined to create one merged assembly (example: many past assemblers): `HG002#mer#ctg1234`
 
